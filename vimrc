@@ -1,15 +1,28 @@
 call pathogen#infect()
 syntax on
 filetype plugin indent on
+
+set t_Co=256
+set cursorline
+
+let g:solarized_style = "dark"
+let g:solarized_contrast = "high"
 set background=dark
+set syntax=on
 colorscheme solarized
-set guifont=Consolas:h15
+
+set guifont=MesloLGSDZ:h13
+
 set shiftwidth=2
 set tabstop=2
+set softtabstop=2
 set smarttab
 set autoindent
+set expandtab
+
 set number
-set transparency=5
+set transparency=3
+
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
 
@@ -19,6 +32,9 @@ let mapleader = ","
 let maplocalleader = "\\"
 
 " }}}
+
+map <Leader>, :NERDTreeToggle<cr>
+let NERDTreeShowHidden=1
 
 " Folding --------------------------------------------------------------------- {{{
 
