@@ -1,7 +1,8 @@
 " Vim syntax file
 " Language:	Twig HTML template
-" Maintainer:	Alex Suraci <i.am@toogeneric.com>
-" Last Change:	2008 Sep 28
+" Maintainer: Gabriel Gosselin <gabrielNOSPAM@evidens.ca>
+" Maintainer:	Armin Ronacher <armin.ronacher@active-4.com>
+" Last Change:	2011 July 29
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -24,4 +25,5 @@ else
   unlet b:current_syntax
 endif
 
-let b:current_syntax = "htmltwig"
+let b:current_syntax = "htmljinja"
+
