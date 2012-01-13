@@ -11,7 +11,10 @@ set background=dark
 set syntax=on
 colorscheme solarized
 
-set guifont=MesloLGSDZ:h13
+set guifont=MesloLGSDZForPowerline:h14
+"set guifont=MesloLGLDZ:h13
+let g:Powerline_symbols = 'fancy'
+set laststatus=2 " Always show the statusline
 
 set shiftwidth=2
 set tabstop=2
