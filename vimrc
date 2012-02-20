@@ -11,7 +11,7 @@ set background=dark
 set syntax=on
 colorscheme solarized
 
-set guifont=MesloLGSDZForPowerline:h14
+"set guifont=MesloLGSDZForPowerline:h14
 "set guifont=MesloLGLDZ:h13
 let g:Powerline_symbols = 'fancy'
 set laststatus=2 " Always show the statusline
@@ -24,7 +24,13 @@ set autoindent
 set expandtab
 
 set number
-set transparency=3
+
+if has("gui_macvim") 
+  set transparency=3
+  set guifont=MesloLGSDZForPowerline:h14
+  map <SwipeLeft> :bprev<CR>
+  map <SwipeRight> :bnext<CR>
+endif
 
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
@@ -38,6 +44,9 @@ let maplocalleader = "\\"
 
 map <Leader>, :NERDTreeToggle<cr>
 let NERDTreeShowHidden=1
+
+" svn blame check
+vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
 " Folding --------------------------------------------------------------------- {{{
 
