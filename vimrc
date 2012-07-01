@@ -45,7 +45,8 @@ let maplocalleader = "\\"
 map <Leader>, :NERDTreeToggle<cr>
 let NERDTreeShowHidden=1
 
-" svn blame check
+" svn blame check via @tsaleh
+" http://tammersaleh.com/posts/quick-vim-svn-blame-snippet
 vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
 " Folding --------------------------------------------------------------------- {{{
@@ -121,11 +122,12 @@ augroup END
 
 augroup ft_javascript
     au!
-
+    au BufNewFile,BufRead *.js set ft=javascript syntax=jquery
     au FileType javascript setlocal foldmethod=marker
     au FileType javascript setlocal foldmarker={,}
 augroup END
 
 " }}}
-
+"
+autocmd BufRead *.php set filetype=php
 autocmd BufRead *.twig set filetype=htmltwig
