@@ -13,6 +13,7 @@ colorscheme solarized
 
 "set guifont=MesloLGSDZForPowerline:h14
 "set guifont=MesloLGLDZ:h13
+
 let g:Powerline_symbols = 'fancy'
 set laststatus=2 " Always show the statusline
 
@@ -27,13 +28,21 @@ set number
 
 if has("gui_macvim") 
   set transparency=3
-  set guifont=MesloLGSDZForPowerline:h14
+  " set guifont=MesloLGSDZForPowerline:h14
+  set guifont=Bitstream\ Vera\ Sans\ Mono:h14
   map <SwipeLeft> :bprev<CR>
   map <SwipeRight> :bnext<CR>
 endif
 
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
+
+" Remaps {{{
+
+" esc
+inoremap vv <esc>
+
+" }}}
 
 " Leader {{{
 

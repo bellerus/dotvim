@@ -1,8 +1,8 @@
 Installation:
 
-    git clone git://github.com/existentialism/dotvim.git ~/.vim
+    git clone git://github.com/bellerus/dotvim.git ~/.vim
 
-Create symlinks:
+[optional] Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
