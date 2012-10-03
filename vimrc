@@ -11,15 +11,12 @@ set background=dark
 set syntax=on
 colorscheme solarized
 
-"set guifont=MesloLGSDZForPowerline:h14
-"set guifont=MesloLGLDZ:h13
-
 let g:Powerline_symbols = 'fancy'
 set laststatus=2 " Always show the statusline
 
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set smarttab
 set autoindent
 set expandtab
@@ -29,7 +26,8 @@ set number
 if has("gui_macvim") 
   set transparency=3
   " set guifont=MesloLGSDZForPowerline:h14
-  set guifont=Bitstream\ Vera\ Sans\ Mono:h14
+  " set guifont=Bitstream\ Vera\ Sans\ Mono:h14
+  set guifont=Source\ Code\ Pro:h14
   map <SwipeLeft> :bprev<CR>
   map <SwipeRight> :bnext<CR>
 endif
