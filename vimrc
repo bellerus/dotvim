@@ -4,6 +4,7 @@ filetype plugin indent on
 
 set t_Co=256
 set cursorline
+set noswapfile
 
 let g:solarized_style = "dark"
 let g:solarized_contrast = "high"
@@ -58,7 +59,7 @@ vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR
 
 " Folding --------------------------------------------------------------------- {{{
 
-set foldlevelstart=0
+set foldlevelstart=20
 
 " Space to toggle folds.
 nnoremap <Space> za
