@@ -41,6 +41,11 @@ set directory=~/.vim/tmp,.
 " esc
 inoremap vv <esc>
 
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " }}}
 
 " Leader {{{
